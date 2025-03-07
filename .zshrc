@@ -128,3 +128,7 @@ alias pds="podman ps -a --format=\"{{.ID}}>{{.Status}}>{{.Names}}>{{.Image}}\"| 
 export NVM_DIR="/usr/local/share/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# fzf-git plugin
+source $ZSH/custom/plugins/fzf-git/fzf-git.sh
+bindkey -r "^G"
