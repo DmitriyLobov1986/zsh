@@ -6,6 +6,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 # DOCKER_HOST
 [[ -n "$XDG_RUNTIME_DIR" ]] && export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
