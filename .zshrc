@@ -85,6 +85,7 @@ plugins=(git
 sudo
 zsh-syntax-highlighting
 fzf-zsh-plugin
+fzf-tab
 zsh-exa
 z
 )
