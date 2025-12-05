@@ -7,6 +7,7 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+export TERM=xterm-256color
 
 # DOCKER_HOST
 [[ -n "$XDG_RUNTIME_DIR" ]] && export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
@@ -84,8 +85,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(aliases
 git 
+dirhistory
 sudo
+podman
 zsh-syntax-highlighting
+zsh-autosuggestions
 fzf-zsh-plugin
 fzf-tab
 zsh-exa
@@ -122,6 +126,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias pds="podman ps -a --format=\"{{.ID}}>{{.Status}}>{{.Names}}>{{.Image}}\"| column -t -s=\">\"" 
 alias nv="nvim"
+alias cl="clear"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
